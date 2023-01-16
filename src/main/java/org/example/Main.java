@@ -1,7 +1,7 @@
 package org.example;
-import java.util.Scanner;
+import org.example.jeu2.JeuPour2;
 
-import org.example.Grid;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -27,6 +27,8 @@ public class Main {
 
                 } else if (reponse == 2) {
                     System.out.println("jouer a 2");
+                    JeuPour2 draw = new JeuPour2();
+                    draw.draw();
 
                 } else if (reponse == 3) {
                     System.out.println("voir score");
@@ -43,23 +45,6 @@ public class Main {
             }
 
         }
-
-
-        char[][] grid = new char[6][7];
-
-        for (int row = 0; row < grid.length; row++){
-            for (int col = 0; col < grid[0].length; col++){
-                grid[row][col] = '⚪';
-            }
-        }
-
-        Grid display = new Grid();
-        display.display(grid);
-        //System.out.println(display);
-
-
-
-
 
     }
 }
