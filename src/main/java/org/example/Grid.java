@@ -22,21 +22,8 @@ public class Grid {
         System.out.println("╚════╩════╩════╩════╩════╩════╩════╝");
     }*/
 
-    public static void main(String[] args){
 
-        char[][] grid = new char[6][7];
-
-        for (int row = 0; row < grid.length; row++){
-            for (int col = 0; col < grid[0].length; col++){
-                grid[row][col] = '⚪';
-            }
-        }
-
-        display(grid);
-
-    }
-
-    public static void display(char[][] grid){
+    public void display(char[][] grid){
         System.out.println("   1    2    3    4    5    6    7");
         System.out.println("-------------------------------------");
         for (int row = 0; row < grid.length; row++){
@@ -51,4 +38,9 @@ public class Grid {
 
         System.out.println();
     }
+
+    //@Override
+    /*public String toString() {
+        return display();
+    }*/
 }
