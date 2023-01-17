@@ -5,20 +5,17 @@ import java.util.Scanner;
 
 public class Players {
 
-    int number;
+    static String player1 = "";
 
-    public String getSymbole() {
-        return symbole;
+    public static String envoie(){
+        return player1;
     }
-
-
-    String symbole;
 
     public void player(){
 
-        boolean player = true;
+        boolean createPlayer = true;
 
-        while (player) {
+        while (createPlayer) {
 
 
             Scanner sc = new Scanner(System.in);
@@ -33,17 +30,13 @@ public class Players {
 
                 if (reponse == 1) {
                     System.out.println("Vous êtes le joueur X");
-                    this.number = 1;
-                    this.symbole = "X";
+                    player1 = "X";
 
-                    player = false;
 
                 } else if (reponse == 2) {
                     System.out.println("Vous êtes le joueur O");
-                    this.number = 2;
-                    this.symbole = "O";
+                    player1 = "O";
 
-                    player = false;
 
                 } else {
                     System.out.println("c'est invalide veuillez taper un chiffre valable...");
