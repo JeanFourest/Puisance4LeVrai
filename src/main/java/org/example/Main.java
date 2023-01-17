@@ -1,5 +1,6 @@
 package org.example;
 import org.example.jeu2.JeuPour2;
+import org.example.bots.BotLv1;
 
 import java.util.Scanner;
 
