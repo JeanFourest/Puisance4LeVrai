@@ -38,13 +38,17 @@ public class JeuPour2 {
                 System.out.print("Joueur " + currentPlayer + ", choisissez une colonne (1-7) : ");
                 int column = scanner.nextInt()-1;
 
-                if (column < 0 || column > 6) {
+                if (column < 0 || column > 6 || tableau[0][column] == player1 || tableau[0][column] == player2) {
                     System.out.println("Colonne non valide, veuillez réessayer.");
                     continue;
                 }
                 currentPlayer = 2;
 
                 Grid.dropPiece(tableau, column, player1);
+                if (Verification.checkEgalite(tableau)){
+                    System.out.println("EGALITE FDP");
+                    gagnant = 1;
+                }
                 if(Verification.checkWinRowCol(tableau, player1)) {
                     grid.printBoard(tableau);
                     System.out.println("BRAVO FDP");
@@ -61,12 +65,17 @@ public class JeuPour2 {
                 System.out.print("Joueur " + currentPlayer + ", choisissez une colonne (1-7) : ");
                 int column = scanner.nextInt() - 1;
 
-                if (column < 0 || column > 6) {
+                if (column < 0 || column > 6 || tableau[0][column] == player1 || tableau[0][column] == player2) {
                     System.out.println("Colonne non valide, veuillez réessayer.");
                     continue;
                 }
                 currentPlayer = 1;
+
                 Grid.dropPiece(tableau, column, player2);
+                if (Verification.checkEgalite(tableau)){
+                    System.out.println("EGALITE FDP");
+                    gagnant = 1;
+                }
                 if (Verification.checkWinRowCol(tableau, player2)) {
                     grid.printBoard(tableau);
                     System.out.println("BRAVO FDP");
