@@ -50,16 +50,29 @@ public class ReadTop {
                 //boucle qui répète l'instruction
                 for (Object key : sortedGrid) {
 
-
+                    //initialisation de la variable player
                     String player = "";
 
-
+                    //interface statique Map.Entry imbriqué dans interface Map
+                    //représente une entrée donc paire clé/valeur
+                    //la méthode score.entrySet retourne Map.Entry qui contient les paires clé/valeur
                     for(Map.Entry mapentry : score.entrySet()) {
 
+                        //compare l'objet spécifié et l'entrée pour voir si égalité
+                        //renvoie true si objet donné est aussi une entrée de Map
+                        //donc les deux entrées représentent la meme Map
                         if (mapentry.getValue().equals(key)) {
+
+                            //vérifie bien si la chaine de caractère est trouvée
                             if (!name.contains(mapentry.getKey().toString())) {
+
+                                //attribue le clé à la variable player
                                 player = mapentry.getKey().toString();
+
+                                //donne la chaine de caractère par rapport à la clé correspondante
                                 name.add(mapentry.getKey().toString());
+
+                                //donne la valeur du nombre de coups par rapport à la clé correspondante
                                 turn.add((int) mapentry.getValue());
                                 break;
                             }
@@ -76,6 +89,7 @@ public class ReadTop {
                     }
                 }
 
+            //ecrit si aucuns scores dans la table
             }else {
                 System.out.println("Aucun score n'est enregistré.");
             }
