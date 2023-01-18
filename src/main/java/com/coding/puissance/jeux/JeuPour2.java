@@ -2,6 +2,8 @@ package com.coding.puissance.jeux;
 
 import com.coding.puissance.module.Grid;
 import com.coding.puissance.module.Players;
+
+import java.util.Arrays;
 import java.util.Scanner;
 
 import static com.coding.puissance.module.Players.player1;
@@ -35,7 +37,7 @@ public class JeuPour2 {
                 System.out.print("Joueur " + currentPlayer + ", choisissez une colonne (1-7) : ");
                 int column = scanner.nextInt()-1;
 
-                if (column < 1 || column > 7) {
+                if (column < 0 || column > 6) {
                     System.out.println("Colonne non valide, veuillez réessayer.");
                     continue;
                 }
@@ -49,7 +51,7 @@ public class JeuPour2 {
                 System.out.print("Joueur " + currentPlayer + ", choisissez une colonne (1-7) : ");
                 int column = scanner.nextInt()-1;
 
-                if (column < 1 || column > 7) {
+                if (column < 0 || column > 6) {
                     System.out.println("Colonne non valide, veuillez réessayer.");
                     continue;
                 }
@@ -57,6 +59,8 @@ public class JeuPour2 {
                 tableau[5][column] = player2;
 
                 currentPlayer = 1;
+
+                //vérification que la ligne est un entier entre 1 et 7:
 
 
             }
