@@ -1,4 +1,4 @@
-package org.example.top;
+package com.coding.puissance.module;
 
 import java.io.*;
 import java.util.*;
@@ -89,13 +89,13 @@ public class ReadTop {
                     }
                 }
 
-            //ecrit si aucuns scores dans la table
+                //ecrit si aucuns scores dans la table
             }else {
                 System.out.println("Aucun score n'est enregistré.");
             }
 
         }catch (IOException e) {
-             System.out.println("erreur");
+            System.out.println("erreur");
         }
 
     }

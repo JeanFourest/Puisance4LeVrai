@@ -34,6 +34,7 @@ public class Main {
                 } else if (reponse == 3) {
                     System.out.println("voir score");
 
+
                 } else if (reponse == 4) {
                     System.out.println("quitter :)");
                     loop = false;
