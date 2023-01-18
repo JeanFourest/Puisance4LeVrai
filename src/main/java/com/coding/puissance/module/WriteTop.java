@@ -1,4 +1,4 @@
-package org.example.top;
+package com.coding.puissance.module;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -7,7 +7,11 @@ import java.io.IOException;
 
 public class WriteTop{
 
-    public void writetop(turn, name){
+    public void writetop(){
+        //public void writetop(turn, name){
+
+        String player = "jordan";
+        int score = 16;
 
 
         try{
@@ -18,7 +22,7 @@ public class WriteTop{
                 FileWriter writer = new FileWriter(file, true);
                 BufferedWriter bw = new BufferedWriter(writer);
 
-                bw.write(name + " : " + turn + ";");
+                bw.write(player + " : " + score + ";");
                 bw.newLine();
                 bw.close();
 
