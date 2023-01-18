@@ -1,28 +1,28 @@
 package com.coding.puissance.module;
 
-import java.util.Scanner;
-
 public class Grid {
-    static int matrix[][];
-    public void table() {
+    static String matrix[][];
+    public static String[][] table() {
 
 
         // crée une matrice
-        matrix= new int[6][7];
+        matrix= new String[6][7];
         //initialise chaque élément de la matrice à 0
 
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[i].length; j++) {
 
-                matrix[i][j] = 0;
+                matrix[i][j] = ".";
 
             }
 
+
         }
 
+        return matrix;
     }
 
-    public static void printBoard() {
+    public static void printBoard(String[][] matrix) {
         System.out.println("  1   2   3   4   5   6   7");
         System.out.println("-----------------------------");
 
