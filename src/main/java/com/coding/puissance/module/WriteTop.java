@@ -7,11 +7,10 @@ import java.io.IOException;
 
 public class WriteTop{
 
-    public void writetop(){
-        //public void writetop(turn, name){
+    public void writetop(int turn, String name){
 
-        String player = "jordan";
-        int score = 16;
+        //String player = "jordan";
+        //int score = 16;
 
 
         try{
@@ -22,7 +21,7 @@ public class WriteTop{
                 FileWriter writer = new FileWriter(file, true);
                 BufferedWriter bw = new BufferedWriter(writer);
 
-                bw.write(player + " : " + score + ";");
+                bw.write(name + " : " + turn + ";");
                 bw.newLine();
                 bw.close();
 
