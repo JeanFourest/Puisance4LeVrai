@@ -1,7 +1,5 @@
 package com.coding.puissance.main;
-import com.coding.puissance.jeu2.JeuPour2;
-import com.coding.puissance.module.Grid;
-import com.coding.puissance.module.Players;
+import com.coding.puissance.jeux.JeuPour2;
 
 import java.util.Scanner;
 

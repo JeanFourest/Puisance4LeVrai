@@ -1,4 +1,4 @@
-package com.coding.puissance.jeu2;
+package com.coding.puissance.jeux;
 
 import com.coding.puissance.module.Grid;
 import com.coding.puissance.module.Players;
@@ -33,7 +33,13 @@ public class JeuPour2 {
 
             if (currentPlayer == 1) {
                 System.out.print("Joueur " + currentPlayer + ", choisissez une colonne (1-7) : ");
-                int column = scanner.nextInt();
+                int column = scanner.nextInt()-1;
+
+                if (column < 1 || column > 7) {
+                    System.out.println("Colonne non valide, veuillez réessayer.");
+                    continue;
+                }
+
                 tableau[5][column] = player1;
 
 
@@ -41,15 +47,18 @@ public class JeuPour2 {
 
             } else if (currentPlayer == 2) {
                 System.out.print("Joueur " + currentPlayer + ", choisissez une colonne (1-7) : ");
-                int column = scanner.nextInt();
+                int column = scanner.nextInt()-1;
+
+                if (column < 1 || column > 7) {
+                    System.out.println("Colonne non valide, veuillez réessayer.");
+                    continue;
+                }
+
                 tableau[5][column] = player2;
 
                 currentPlayer = 1;
 
-                if (column < 1 || column > 7) {
-                    System.out.println("Colonne non valide, veuillez réessayer.");
 
-                }
             }
 
         }
