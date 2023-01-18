@@ -35,12 +35,11 @@ public class JeuPour2 {
                 System.out.print("Joueur " + currentPlayer + ", choisissez une colonne (1-7) : ");
                 int column = scanner.nextInt()-1;
 
-                if (column < 1 || column > 7) {
+                if (column < 0 || column > 6 || tableau[0][column] == player1 || tableau[0][column] == player2) {
                     System.out.println("Colonne non valide, veuillez réessayer.");
                     continue;
                 }
-
-                tableau[5][column] = player1;
+                Grid.dropPiece(tableau, column, player1);
 
 
                 currentPlayer = 2;
@@ -49,18 +48,16 @@ public class JeuPour2 {
                 System.out.print("Joueur " + currentPlayer + ", choisissez une colonne (1-7) : ");
                 int column = scanner.nextInt()-1;
 
-                if (column < 1 || column > 7) {
+                if (column < 0 || column > 6 || tableau[0][column] == player1 || tableau[0][column] == player2) {
                     System.out.println("Colonne non valide, veuillez réessayer.");
                     continue;
                 }
-
-                tableau[5][column] = player2;
+                Grid.dropPiece(tableau, column, player2);
 
                 currentPlayer = 1;
 
 
             }
-
         }
     }
 }
