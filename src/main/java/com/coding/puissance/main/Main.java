@@ -1,5 +1,6 @@
 package com.coding.puissance.main;
 import com.coding.puissance.jeux.JeuPour2;
+import com.coding.puissance.module.ReadTop;
 
 import java.util.Scanner;
 
@@ -33,7 +34,8 @@ public class Main {
 
                 } else if (reponse == 3) {
                     System.out.println("voir score");
-
+                    ReadTop readTop = new ReadTop();
+                    readTop.readtop();
 
                 } else if (reponse == 4) {
                     System.out.println("quitter :)");

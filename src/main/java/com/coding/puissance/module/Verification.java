@@ -11,7 +11,6 @@ public class Verification {
         for (int i = 0; i < board[0].length; i++) {
             for (int j = 0; j < board.length; j++) {
                 list.add(board[j][i]);
-                System.out.println(list);
 
                 if (list.size() == 42 && list.contains("X") && list.contains("O") && !list.contains(".")) {
                     return true;
