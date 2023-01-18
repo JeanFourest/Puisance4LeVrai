@@ -38,8 +38,8 @@ public class Main {
 
                 } else if (reponse == 3) {
                     System.out.println("voir score");
-                    WriteTop top = new WriteTop();
-                    top.writetop();
+                    ReadTop top = new ReadTop();
+                    top.readtop();
 
                 } else if (reponse == 4) {
                     System.out.println("quitter :)");
