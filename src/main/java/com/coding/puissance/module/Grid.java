@@ -38,4 +38,13 @@ public class Grid {
         System.out.println("-----------------------------");
     }
 
+    public static void dropPiece(String[][] matrix, int colonne, String player){
+        int line = 5;
+
+        while (!matrix[line][colonne].equals(".")) {
+            line--;
+        }
+        matrix[line][colonne] = player;
+    }
+
 }
