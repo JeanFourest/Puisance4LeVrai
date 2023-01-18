@@ -1,10 +1,15 @@
 package org.example;
+import org.example.jeu2.Grid;
 import org.example.jeu2.JeuPour2;
+import org.example.top.ReadTop;
+import org.example.top.WriteTop;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         boolean loop = true;
 
@@ -30,8 +35,11 @@ public class Main {
                     JeuPour2 draw = new JeuPour2();
                     draw.draw();
 
+
                 } else if (reponse == 3) {
                     System.out.println("voir score");
+                    WriteTop top = new WriteTop();
+                    top.writetop();
 
                 } else if (reponse == 4) {
                     System.out.println("quitter :)");

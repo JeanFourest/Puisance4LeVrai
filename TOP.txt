@@ -1,0 +1,16 @@
+player : 12;
+fab : 5;
+jean : 16;
+jordan : 8;
+jordan : 5;
+jordan : 8;
+jordan : 8;
+jordan : 8;
+jordan : 8;
+jordan : 8;
+jordan : 8;
+jordan : 8;
+jordan : 8;
+jordan : 8;
+jordan : 8;
+jordan : 16;
