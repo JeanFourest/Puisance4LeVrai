@@ -1,11 +1,10 @@
-package com.coding.puissance.main;
-import com.coding.puissance.jeux.JeuPour2;
+package org.example;
+import org.example.jeu2.JeuPour2;
 
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
 
         boolean loop = true;
 
@@ -28,8 +27,8 @@ public class Main {
 
                 } else if (reponse == 2) {
                     System.out.println("jouer a 2");
-                    JeuPour2 jeuPour2 = new JeuPour2();
-                    jeuPour2.jeuPour2();
+                    JeuPour2 draw = new JeuPour2();
+                    draw.draw();
 
                 } else if (reponse == 3) {
                     System.out.println("voir score");
