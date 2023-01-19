@@ -64,4 +64,4 @@ fabien
 https://trello.com/b/ueAd0R55/puissance4
 
 
-_**Create by jordan, Jean, fabien**_
+_**Created by jordan, Jean, fabien**_
