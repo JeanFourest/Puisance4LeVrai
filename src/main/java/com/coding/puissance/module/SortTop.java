@@ -1,4 +1,4 @@
-package org.example.top;
+package com.coding.puissance.module;
 
 import java.util.List;
 
