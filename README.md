@@ -11,7 +11,7 @@ Notre code est divisé en plusseurs classes et pakedge:
 
 * jeux
 
-JeuPour2.java
+JeuPour2.java <br>
 JeuSolo.java
 
 * main
@@ -20,13 +20,13 @@ Main.java
 
 * module
 
-AI.java
-Grid.java
-Players.java
-ReadTop.java
-SortTop.java
-Verification.java
-WriteTop.java
+AI.java <br>
+Grid.java <br>
+Players.java <br>
+ReadTop.java <br>
+SortTop.java <br>
+Verification.java <br>
+WriteTop.java <br>
 
 #### La classe _JeuPour2_ gère le déroulement de la partie et les intéractions utilisateurs dans la console:
 #### La classe _JeuSolo_ gère le déroulement de la partie avec une IA:
