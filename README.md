@@ -12,28 +12,44 @@ Notre code est divisé en plusieurs classes et pakedge:
 * jeux
 
 JeuPour2.java <br>
+<br>
 jordan, Jean
 JeuSolo.java <br>
+<br>
 Jean, fabien
 
 * main
 
 Main.java <br>
+<br>
 jordan, Jean, fabien
+
 * module
 
 AI.java <br>
+
 Jean, fabien <br>
+
 Grid.java <br>
+
 Jean <br>
+
 Players.java <br>
+
 jordan <br>
+
 ReadTop.java <br>
+
 fabien <br>
+
 SortTop.java <br>
+
 fabien <br>
+
 Verification.java <br>
+
 jordan, Jean <br>
+
 WriteTop.java <br>
 
 #### La classe _JeuPour2_ gère le déroulement de la partie et les intéractions utilisateurs dans la console:
