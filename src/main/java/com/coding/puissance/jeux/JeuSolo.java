@@ -74,7 +74,7 @@ public class JeuSolo {
             } else if (currentPlayer == 2) {
                 System.out.println("Bot, choisissez une colonne (1-7) : ");
                 int column = AI.botLv1();
-                System.out.println(column);
+                System.out.println(column + 1);
                 joueur2++;
 
                 //test si le joueur a mit un chiffre qui n'est pas entre 1 et 7
