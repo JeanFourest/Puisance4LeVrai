@@ -61,7 +61,7 @@ fabien
 
 
 ### Pour les responsabilité effectives de chacun dans le groupe je vous met le lien de notre trello ###
-https://trello.com/b/ueAd0R55/puissance4
+https://trello.com/invite/b/ueAd0R55/ATTIe7ff6479a34229ffa4ec72bfe698a83dC47B089E/puissance4
 
 
 _**Created by jordan, Jean, fabien**_
