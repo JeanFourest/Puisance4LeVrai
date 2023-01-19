@@ -2,11 +2,12 @@ package com.coding.puissance.module;
 
 public class Grid {
     static String matrix[][];
+
     public static String[][] table() {
 
 
         // crée une matrice
-        matrix= new String[6][7];
+        matrix = new String[6][7];
         //initialise chaque élément de la matrice à 0
 
         for (int i = 0; i < matrix.length; i++) {
@@ -22,6 +23,7 @@ public class Grid {
         return matrix;
     }
 
+// affichage du tableau
     public static void printBoard(String[][] matrix) {
         System.out.println("  1   2   3   4   5   6   7");
         System.out.println("-----------------------------");
@@ -37,7 +39,9 @@ public class Grid {
 
         System.out.println("-----------------------------");
     }
-    public static void dropPiece(String[][] matrix, int colonne, String player){
+
+    //placement des tokens avec gravité
+    public static void dropPiece(String[][] matrix, int colonne, String player) {
         int line = 5;
 
         while (!matrix[line][colonne].equals(".")) {
@@ -45,5 +49,4 @@ public class Grid {
         }
         matrix[line][colonne] = player;
     }
-
 }

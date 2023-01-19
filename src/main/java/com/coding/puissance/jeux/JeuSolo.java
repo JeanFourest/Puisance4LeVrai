@@ -1,25 +1,20 @@
 package com.coding.puissance.jeux;
 
-import com.coding.puissance.module.Grid;
-import com.coding.puissance.module.Players;
-import com.coding.puissance.module.Verification;
-import com.coding.puissance.module.WriteTop;
+import com.coding.puissance.module.*;
 
 import java.util.Scanner;
 
 import static com.coding.puissance.module.Players.player1Sym;
 import static com.coding.puissance.module.Players.nom1;
 import static com.coding.puissance.module.Players.player2Sym;
-import static com.coding.puissance.module.Players.nom2;
-
-public class JeuPour2 {
+public class JeuSolo {
 
 
 
-    public void jeuPour2() {
+    public void JeuSolo() {
 
         Players players = new Players();
-        players.player();
+        players.playerSolo();
 
         Scanner scanner = new Scanner(System.in);
         Grid grid = new Grid();
@@ -77,8 +72,9 @@ public class JeuPour2 {
 
                 //demande au joueur quel colonne il veut mettre son token
             } else if (currentPlayer == 2) {
-                System.out.print("Joueur " + nom2 + ", choisissez une colonne (1-7) : ");
-                int column = scanner.nextInt() - 1;
+                System.out.println("Bot, choisissez une colonne (1-7) : ");
+                int column = AI.botLv1();
+                System.out.println(column);
                 joueur2++;
 
                 //test si le joueur a mit un chiffre qui n'est pas entre 1 et 7
@@ -97,13 +93,11 @@ public class JeuPour2 {
                 }
                 if (Verification.checkWinRowCol(tableau, player2Sym)) {
                     grid.printBoard(tableau);
-                    System.out.println("BRAVO "+ nom2);
-                    writeTop.writetop(joueur2, nom2);
+                    System.out.println("BRAVO Bot");
                     gagnant = 2;
                 } else if (Verification.checkDiagonalWin(tableau, player2Sym)) {
                     grid.printBoard(tableau);
-                    System.out.println("BRAVO "+ nom2);
-                    writeTop.writetop(joueur2, nom2);
+                    System.out.println("BRAVO Bot");
                     gagnant = 2;
                 }
 
