@@ -1,5 +1,6 @@
 package com.coding.puissance.main;
 import com.coding.puissance.jeux.JeuPour2;
+import com.coding.puissance.jeux.JeuSolo;
 import com.coding.puissance.module.ReadTop;
 
 import java.util.Scanner;
@@ -26,6 +27,8 @@ public class Main {
 
                 if (reponse == 1) {
                     System.out.println("jouer seul");
+                    JeuSolo jeuSolo = new JeuSolo();
+                    jeuSolo.JeuSolo();
 
                 } else if (reponse == 2) {
                     System.out.println("jouer a 2");

@@ -23,6 +23,7 @@ public class Grid {
         return matrix;
     }
 
+// affichage du tableau
     public static void printBoard(String[][] matrix) {
         System.out.println("  1   2   3   4   5   6   7");
         System.out.println("-----------------------------");
@@ -39,6 +40,7 @@ public class Grid {
         System.out.println("-----------------------------");
     }
 
+    //placement des tokens avec gravité
     public static void dropPiece(String[][] matrix, int colonne, String player) {
         int line = 5;
 
