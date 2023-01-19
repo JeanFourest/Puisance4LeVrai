@@ -1,4 +1,4 @@
-package org.example.top;
+package com.coding.puissance.module;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -7,12 +7,11 @@ import java.io.IOException;
 
 public class WriteTop{
 
-    public void writetop(){
-    //public void writetop(turn, name){
+    //public void writetop(){
+    public void writetop(int turn, String name){
 
         //String player = "jordan";
         //int score = 16;
-        //test
 
 
         try{
