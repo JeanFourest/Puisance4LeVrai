@@ -11,8 +11,8 @@ Notre code est divisé en plusseurs classes et pakedge:
 
 * jeux
 
-_JeuPour2.java_
-_JeuSolo.java_
+JeuPour2.java
+JeuSolo.java
 
 * main
 
@@ -20,18 +20,20 @@ Main.java
 
 * module
 
-_AI.java_
-_Grid.java_
-_Players.java_
-_ReadTop.java_
-_SortTop.java_
-_Verification.java_
-_WriteTop.java_
+AI.java
+Grid.java
+Players.java
+ReadTop.java
+SortTop.java
+Verification.java
+WriteTop.java
 
 #### La classe _JeuPour2_ gère le déroulement de la partie et les intéractions utilisateurs dans la console:
 #### La classe _JeuSolo_ gère le déroulement de la partie avec une IA:
 #### La classe _Grid_ contient la grille de jeu et les méthodes qui sont liées à cette dernière:
 #### La classe _Player_ contient le nom des joueur, les positions des jetons qu'il a joués et le symbole qu'il lui a été affecté:
+#### La classe _SortTop_ Et pour voir le top10 des joueurs:
+
 
 ### Pour les responsabilité effectives de chacun dans le groupe je vous met le lien de notre trello ###
 https://trello.com/b/ueAd0R55/puissance4
