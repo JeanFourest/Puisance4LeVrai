@@ -29,7 +29,7 @@ public class WriteTop{
                 BufferedWriter bw = new BufferedWriter(writer);
 
                 //ecrit le gagnant dans le fichier sous la forme suivante :
-                bw.write(name + " : " + turn + ";");
+                bw.write(name + " : " + turn);
                 //créé une nouvelle ligne
                 bw.newLine();
                 bw.close();

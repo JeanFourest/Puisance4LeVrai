@@ -6,6 +6,8 @@ import java.util.List;
 
 public class Verification {
 
+
+    //verification d'egalité
     public static boolean checkEgalite(String[][] board) {
         List<String> list = new ArrayList<>();
         for (int i = 0; i < board[0].length; i++) {
@@ -47,7 +49,7 @@ public class Verification {
         int rows = board.length;
         int cols = board[0].length;
 
-
+        //verification des diagonales
         // en haut a gauche -> en bas a droite
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
@@ -68,7 +70,7 @@ public class Verification {
             }
         }
 
-        // Check top-right to bottom-left diagonals: en haut a droite -> en bas a gauche
+        //en haut a droite -> en bas a gauche
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
                 player = board[i][j];
